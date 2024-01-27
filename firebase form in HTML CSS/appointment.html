@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointmnet form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./image_demo.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the card */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the card */
+            width:500px
+        }
+
+        #appointmentForm {
+            max-width: 400px; /* Adjust the width of the form as needed */
+            margin: 0 auto; /* Center the form horizontally within the card */
+        }
+
+        .inputBox {
+            margin-bottom: 15px;
+        }
+
+        .inputBox input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Change the button color as needed */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+        <form action="" id="appointmentForm">
+            <h4>For a single appointmnet it cost RS500 only </h4>
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="email" id="mailid" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" id="phno" placeholder="Phone Number">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="dob" placeholder="Date of Birth">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="doa" placeholder="Date of Appointment">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="dep" placeholder="Department">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="doc" placeholder="Doctor">
+            </div>
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+                    
+        </form>
+        <a href="../payment.html">Payment</a>
+      </div>
+    
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="appointment.js"></script>
+</body>
+</html>
